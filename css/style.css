@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+body, main{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+}
+
+header nav{
+    width: 100%;
+    height: 10vh;
+}
+
+header nav ul{
+    width: 100%;
+    height: 10vh;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li{
+    font-family:'Acme', sans-serif;
+    font-size: 1.5em;
+    list-style: none;
+    padding: 5px 10px;
+}
+
+header nav ul li a{
+    color: darkslateblue;
+    text-decoration: none;
+    width: 100%;
+    height: 100vh;
+}
+    
+header nav ul li a:hover{
+    color: darkorange;
+}
+
+/*main*/
+
+.container{
+    width: 100%;
+    height: 60vh;
+}
+
+.container .row{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container .row .col-30{
+    width: 20em;
+    height: 23em;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .row .col-30:nth-child(1){
+    background-image: url('https://super-ficcion.com/wp-content/uploads/2020/07/dc_comics-scaled.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+
+.container .row .col-30:nth-child(2){
+    background-image: url("https://i.blogs.es/361fd5/283/450_1000.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+
+.container .row .col-30:nth-child(3){
+    background-image: url('https://www.lacasadeel.net/wp-content/uploads/2019/02/Manga.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+
+.container .row .col-30 h2{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family:'Acme', sans-serif; 
+    font-size: 1.4em;
+    margin-top: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container .row .col-30 p{
+    font-family: 'Acme', sans-serif; 
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Banner 1*/
+.container2{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://cinepremiere.com.mx/assets/images/noticias/2015/12-diciembre/MarvelVsDC.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.container2 .row{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+}
+
+.container2 .row .col-60{
+    width: 60%;
+    padding-left: 100px;
+}
+
+.container2 .row .col-60 h2{
+    font-family: 'Acme', sans-serif; 
+    font-size: 2.7em;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.container2 .row .col-60 p{
+    font-family: 'Acme', sans-serif; 
+    font-size: 1.6em;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.container2 .row .col-60 button{
+    width: 10em;
+    padding: 6px 10px;
+    font-family: 'Acme', sans-serif; 
+    font-size: 1.3em;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.container2 .row .col-60 button:hover{
+    color: white;
+    transition: 0.3s ease-in-out;
+    background-color: black;
+}
+
+/* Resolución*/
+
+@media(max-width:1080px){
+    .container2{
+        height: 89vh;
+    }
+    
+    .container2 .row{
+        height: 89vh;
+    }
+}
+
+@media(max-width:768px){
+    .container2{
+        height: 80vh;
+        margin-top: 30px;
+    }
+    
+    .container2 .row{
+        height: 80vh;
+    }
+
+    .container2 .row .col-60{
+        width: 70%;
+    }
+}
+
+@media(max-width: 480px){
+    .container .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container .row .col-30{
+        width:  50%;
+        height: 30vh;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        margin: 5px auto;
+    }
+
+    .container .row .col-30:nth-child(1){
+        background-size: 100%;
+    }
+    
+    .container .row .col-30:nth-child(2){
+        background-size: 100%;
+    }
+    
+    .container .row .col-30:nth-child(3){
+        background-size: 100%;
+    }
+
+    .container2{
+        margin-top: 30px;
+        height: 50vh;
+    }
+    
+    .container2 .row{
+        height: 50vh;
+    }
+
+    .container2 .row .col-60{
+        width: 100%;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container2 .row .col-60 h2{
+        font-size: 2.1em;
+        text-align: center;
+    }
+
+    .container2 .row .col-60 p{
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .container2 .row .col-60 button{
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:370px){
+   
+    header nav ul li{
+        font-family:'Acme', sans-serif;
+        font-size: 1em;
+        list-style: none;
+        padding: 3px 7px;
+    }
+
+    .container2{
+        height: 40vh;
+    }
+    
+    .container2 .row{
+        height: 40vh;
+    }
+
+    .container .row .col-30{
+        width:  42%;
+        height: 18vh;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        margin: 5px auto;
+    }
+
+    .container .row .col-30 h2{
+        font-size: 1em; 
+        margin-bottom: 18px;
+    }
+    
+    .container .row .col-30 p{
+       font-size: 0.8em;
+       margin-top: 15px;
+    }
+    
+    .container .row .col-30:nth-child(3){
+        background-size: auto 100%;
+    }
+    
+    .container2 .row .col-60 button{
+        width: 8em;
+        font-size: 1em;
+    }
+
+    .container2 .row .col-60 h2{
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .container2 .row .col-60 p{
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .container2 .row .col-60 button{
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+
